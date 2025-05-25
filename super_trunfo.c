@@ -18,12 +18,12 @@ int main(){
 // 1°- Cadastro de variáveis das duas cartas.
 
     //Variáveis carta 1
-    char estado1, codigo1[03], cidade1[15];
+    char estado1, codigo1[04], cidade1[15];
     int populacao1, ponto_turistico1;
     float area1, pib1; 
     
     //Variáveis carta 2
-    char estado2, codigo2[03], cidade2[15];
+    char estado2, codigo2[04], cidade2[15];
     int populacao2, ponto_turistico2;
     float area2, pib2; 
     
@@ -33,7 +33,7 @@ int main(){
     printf("Cadastro carta 1:\n");
 
     printf("Insira a letra do estado: \n");
-    scanf("%c", &estado1);
+    scanf(" %c", &estado1);
 
     printf("Insira o código da carta: \n");
     scanf("%s", codigo1);
@@ -54,10 +54,10 @@ int main(){
     scanf("%d", &ponto_turistico1);
 
     // Cadastro carta 2
-    printf("Cadastro carta 2:\n");
+    printf("\nCadastro carta 2:\n");
 
     printf("Insira a letra do estado: \n");
-    scanf("%c", &estado2);
+    scanf(" %c", &estado2);
 
     printf("Insira o código da carta: \n");
     scanf("%s", codigo2);
@@ -97,7 +97,7 @@ int main(){
     printf("Nome da Cidade: %s\n", cidade2);
     printf("População: %d\n", populacao2);
     printf("Área: %.2f Km²\n", area2 );
-    printf("PIB: %.2f Bilhõs de Reais.\n", pib2);
+    printf("PIB: %.2f Bilhões de Reais.\n", pib2);
     printf("Número de Pontos Turísticos: %d\n\n", ponto_turistico2);
     
     return 0;
