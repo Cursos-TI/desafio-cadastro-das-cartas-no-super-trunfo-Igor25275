@@ -19,13 +19,13 @@ int main(){
 // - Cadastro de variáveis das duas cartas.
 
     //Variáveis carta 1
-    char estado1, codigo1[04], cidade1[15];
+    char estado1, codigo1[04], cidade1[20];
     int populacao1, ponto_turistico1;
     float densidade_populacional1, pib_capita1, area1, pib1; 
     long double super_poder1;
     
     //Variáveis carta 2
-    char estado2, codigo2[04], cidade2[15];
+    char estado2, codigo2[04], cidade2[20];
     int populacao2, ponto_turistico2;
     float densidade_populacional2, pib_capita2, area2, pib2; 
     long double super_poder2;
