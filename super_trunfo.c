@@ -133,49 +133,76 @@ int main(){
 //-COMPARAR CARTA POR CARTA PARA VER QUEM GANHOU 
     printf("****************************************************************\n");
     printf("\n\nComparacao das cartas: Atributo(Populacao)\n");
+
+    int contaPonto_carta1 = 0, contaPonto_carta2 = 0;
    
     //POPULACAO
     if (populacao1 > populacao2){
 
         printf("Carta 1: %s : %d\n", cidade1, populacao1);
         printf("Carta 2: %s : %d\n", cidade2, populacao2);
-        printf("*******************************************************\n");
         printf("Carta 1 (%s) venceu.\n", cidade1);
-        printf("*******************************************************\n");
 
+        contaPonto_carta1++;
+        
     }else{
 
         printf("Carta 1: %s : %d\n", cidade1, populacao1);
         printf("Carta 2: %s : %d\n", cidade2, populacao2);
-        printf("*******************************************************\n");
         printf("Carta 2 (%s) venceu.\n", cidade2);
-        printf("*******************************************************\n");
+
+        contaPonto_carta2++;
 
     }
 
-    // AREA
+    //Pontos turisticos
+    printf("\n\nComparacao das cartas: Atributo(Ponto Turistico)\n");
+
+    if (ponto_turistico1 > ponto_turistico2){
+
+        printf("Carta 1: %s : %d\n", cidade1, ponto_turistico1);
+        printf("Carta 2: %s : %d\n", cidade2, ponto_turistico2);
+        printf("Carta 1 (%s) venceu.\n", cidade1);
+
+        contaPonto_carta1++;
+
+    }else{
+
+        printf("Carta 1: %s : %d\n", cidade1, ponto_turistico1);
+        printf("Carta 2: %s : %d\n", cidade2, ponto_turistico2);
+        printf("Carta 2 (%s) venceu.\n", cidade2);
+
+        contaPonto_carta2++;
+
+    }
+
+    //PIB
+    printf("\n\nComparacao das cartas: Atributo(PIB)\n");
+
+        if (pib1 > pib2){
+
+        printf("Carta 1: %s : %.2f\n", cidade1, pib1);
+        printf("Carta 2: %s : %.2f\n", cidade2, pib2);
+        printf("Carta 1 (%s) venceu.\n", cidade1);
+
+        contaPonto_carta1++;
+
+    }else{
+
+        printf("Carta 1: %s : %.2f\n", cidade1, pib1);
+        printf("Carta 2: %s : %.2f\n", cidade2, pib2);
+        printf("Carta 2 (%s) venceu.\n", cidade2);
+
+        contaPonto_carta2++;
+
+    }
+
+    // contabiliza os pontos de atributo por atributo
+    printf("\n\n****************************************************************\n");
+    printf("Carta 1 - (%s): %d pontos.\n", cidade1, contaPonto_carta1);
+    printf("Carta 2 - (%s): %d pontos.\n", cidade2, contaPonto_carta2);
+
     
-
-    // PIB
-    
-
-    // PONTOS TURISTICOS
-    
-
-    // DENSIDADE POPULACIONAL - CARTA COM MENOR VALOR VENCE 
-   
-
-    //PIB PER CAPITA
-    
-
-    // SUPER PODER 
-    
-
-// saida de comparacao das cartas - 
-
-
-
-
 
 
     return 0;
